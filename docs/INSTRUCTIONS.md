@@ -1,7 +1,7 @@
 
 # Don't Repeat Yourself - Component Building Block
 
-Ontwerp en bouw voor de opdrachtgever een robuust, goed werkend component, waarin de belangen van de eindgebruiker centraal staan.
+Ontwerp en bouw een robuust, goed werkend component, waarin de belangen van de eindgebruiker centraal staan.
 
 
 ## Context
