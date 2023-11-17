@@ -7,8 +7,8 @@
     .progress-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
 		align-items: flex-end;
+		justify-content: space-between;
 		gap: 1em;
 		margin-top: 0.25em;
 	}
@@ -38,5 +38,11 @@
 
 	.progress-percentage {
 		height: 85%;
+	}
+
+	@media screen and (max-width: 480px) {
+		progress {
+			width: 100%;
+		}
 	}
 </style>

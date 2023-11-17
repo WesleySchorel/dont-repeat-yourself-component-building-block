@@ -12,12 +12,10 @@
         <li>
             <a href="/">
                 <div class="principe">
-                <section>
                     <h3><span>{principe.titel}. </span> Principe {principe.index}</h3>
                     <p>
 						{principe.titel}
 					</p>
-                </section>
                 <Progressbar />
             </div>
             </a>
@@ -76,5 +74,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 480px) {
+		li {
+			width: 51%;
+		}
 	}
 </style>
