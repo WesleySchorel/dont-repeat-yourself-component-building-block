@@ -1,10 +1,10 @@
 <section class="progress-container">
-    <progress id="progress-partner" max="100" value="65" />
-    <label class="progress-percentage" for="progress-partner">16/25</label>
+	<progress id="progress-partner" max="100" value="65" />
+	<label class="progress-percentage" for="progress-partner">16/25</label>
 </section>
 
 <style>
-    .progress-container {
+	.progress-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -13,8 +13,7 @@
 		margin-top: 0.25em;
 	}
 
-
-    progress {
+	progress {
 		width: 100%;
 	}
 
@@ -38,5 +37,11 @@
 
 	.progress-percentage {
 		height: 85%;
+	}
+
+	@media screen and (max-width: 480px) {
+		progress {
+			width: 60%;
+		}
 	}
 </style>
