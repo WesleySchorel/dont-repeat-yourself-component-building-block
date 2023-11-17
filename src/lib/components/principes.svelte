@@ -4,12 +4,14 @@
     export let principes;
 </script>
 
+<!-- <pre>{JSON.stringify(principes, null, 2)}</pre> -->
+
 <section class="container-principes">
     <ul>
         {#each principes as principe}
         <li>
+            <a href="/">
                 <div class="principe">
-					<a href="/">
                 <section>
                     <h3><span>{principe.titel}. </span> Principe {principe.index}</h3>
                     <p>
@@ -17,8 +19,8 @@
 					</p>
                 </section>
                 <Progressbar />
-			</a>
             </div>
+            </a>
         </li>
         {/each}
     </ul>
@@ -29,9 +31,6 @@
 		box-sizing: border-box;
 	}
 
-	li {
-		margin: 0;
-	}
 
 	li a {
 		text-decoration: none;
@@ -73,7 +72,6 @@
 
 		border-radius: 0.5em;
 		height: 100%;
-		width: 60%;
 		border: solid 1px var(--c-container-stroke);
 		display: flex;
 		flex-direction: column;
